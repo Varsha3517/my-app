@@ -1,0 +1,44 @@
+.list{
+    display: inline-flex;
+    margin-top: 70px;
+    
+    .m_list{
+        width: 160px;
+        margin: 5px;
+        display: block;
+        background: black;
+        transition: background-position 275ms ease;
+
+        .trans{
+            height: 225px;
+            width: 160px;
+            background: red;
+        }
+        
+        img{
+            width: 160px;
+            height: 225px;
+            margin-bottom: 0px;
+        }
+        .bar
+        {
+            background: red;
+            height: 4px;
+            margin-top: 0px;
+        }
+        .details{
+            color: white;
+            padding-left: 3px;
+            .title{
+                color: rgb(208, 208, 247);
+                font-size: 20px;
+            }
+        }
+    }
+    .m_list:hover{
+            background: red;
+            transition: 0.75s;
+            transform: translate(0px, 5px);
+            background-position: 0 100%;
+    }
+}

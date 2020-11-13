@@ -1,0 +1,15 @@
+<div class="movie-container">
+    <img class="poster" [src]="movie.m_imageUrl" alt="">
+    <h1>({{movie.id}})</h1>
+    <h2>{{movie.m_name}}</h2>
+    <h3>{{movie.m_year}}</h3>
+
+    <div class="rating">
+        <p class="rate">{{movie.m_rating}}</p>
+        <img class="star-logo" src="https://www.vhv.rs/dpng/d/534-5342935_transparent-star-symbol-png-star-shape-transparent-background.png" alt="">
+    </div>
+
+    <div>
+        <a href="{{movie.m_trailer}}">Trailer</a>
+    </div>
+</div>

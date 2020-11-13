@@ -1,0 +1,13 @@
+<div class="list">
+  <div class="m_list" *ngFor="let list of movie_list">
+    <div routerLink="/list/{{list.imdbID}}">
+      <div class="trans">
+        <img class="imgPoster" [src]="list.Poster" alt=""></div>
+      <div class="bar"></div>
+      <div class="details">
+        <p class="title">{{list.Title}}</p>
+        <p class="year">{{list.Year}}</p>
+      </div>
+    </div>
+  </div>
+</div>

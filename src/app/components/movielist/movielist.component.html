@@ -1,0 +1,36 @@
+<div class="input-form">
+
+    <input [(ngModel)]="movie.id" placeholder="Id" type="text">
+
+    <input [(ngModel)]="movie.m_name" placeholder="Name" type="text">
+
+    <input [(ngModel)]="movie.m_year" placeholder="Year" type="text">
+
+    <input [(ngModel)]="movie.m_rating" placeholder="Rating" type="text">
+
+    <input [(ngModel)]="movie.m_imageUrl" placeholder="ImageUrl" type="text">
+
+    <img [(ngModel)]="movie.m_star" src="" alt="">
+
+    <button (click)="save()">ADD</button>
+
+</div>
+
+
+<div class="movie-container">
+
+    <div class="movie" *ngFor="let movie of movielist">
+        <a routerLink="/movies/{{movie.id}}">
+            <img class="poster" [src]="movie.m_imageUrl" alt="">
+            <div class="details">
+                <p class="movie-id">{{movie.id}}</p>
+                <p class="movie-name">{{movie.m_name}}</p>
+                <p class="movie-year">{{movie.m_year}}</p>
+                <div class="rating">
+                    <p class="rate">{{movie.m_rating}}</p>
+                    <img class="star-logo" [src]="movie.m_star" alt="">
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
